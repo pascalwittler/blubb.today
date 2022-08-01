@@ -1,0 +1,33 @@
+{
+  "name": "blubb.today",
+  "short_name": "blubb.today",
+  "theme_color": "#2292a8",
+  "background_color": "#fffcff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "https://blubb.today",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "res/img/favicon/blubb.today-512x512.png",
+      "sizes": "512x512",
+      "type": "img/png"
+    },
+    {
+      "src": "res/img/favicon/blubb.today-256x256.png",
+      "sizes": "256x256",
+      "type": "img/png"
+    },
+    {
+      "src": "res/img/favicon/blubb.today-32x32.png",
+      "sizes": "32x32",
+      "type": "img/png"
+    },
+    {
+      "src": "res/img/favicon/blubb.today-16x16.png",
+      "sizes": "16x16",
+      "type": "img/png"
+    }
+  ]
+}
