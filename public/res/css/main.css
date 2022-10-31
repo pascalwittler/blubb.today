@@ -84,6 +84,7 @@ progress {
   color: var(--color-text);
   background-color: #eeebee;
   border: none;
+  border-radius: 4px;
   appearance: none;
 }
 
