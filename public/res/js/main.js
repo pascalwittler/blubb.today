@@ -22,6 +22,19 @@ if ('serviceWorker' in navigator) {
 const addMenuOpener = document.querySelector('.add-menu-opener');
 const addMenu = document.querySelector('.add-menu');
 
+const addMenuList = addMenu.querySelector('ul');
+
+addMenuList.innerHTML += `
+  <li><button value="100">100 ml</button></li>
+  <li><button value="200">200 ml</button></li>
+  <li><button value="250">250 ml</button></li>
+  <li><button value="300">300 ml</button></li>
+  <li><button value="330">330 ml</button></li>
+  <li><button value="350">350 ml</button></li>
+  <li><button value="500">500 ml</button></li>
+  <li><button value="1000">1000 ml</button></li>
+`;
+
 const blubbStatusProgress = document.querySelector('progress');
 const blubbStatusLabel = document.querySelector('.current');
 
