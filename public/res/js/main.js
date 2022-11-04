@@ -35,8 +35,20 @@ addMenuList.innerHTML += `
   <li><button value="1000">1000 ml</button></li>
 `;
 
+const addMenuButtons = addMenuList.querySelectorAll('button');
+
 const blubbStatusProgress = document.querySelector('progress');
 const blubbStatusLabel = document.querySelector('.current');
+
+addMenuButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const currentBlubbStatus = parseInt(localStorage.getItem(new Date().toISOString().split('T')[0]));
+    localStorage.setItem(new Date().toISOString().split('T')[0], (currentBlubbStatus + parseInt(button.value)).toString())
+    blubbStatusProgress.value = parseInt(localStorage.getItem(new Date().toISOString().split('T')[0]));
+    blubbStatusLabel.innerHTML = localStorage.getItem(new Date().toISOString().split('T')[0]);
+    addMenu.close();
+  });
+});
 
 blubbStatusProgress.value = parseInt(localStorage.getItem(new Date().toISOString().split('T')[0]));
 blubbStatusLabel.innerHTML = localStorage.getItem(new Date().toISOString().split('T')[0]);
