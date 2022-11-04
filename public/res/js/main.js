@@ -7,12 +7,12 @@ if ('Notification' in window) {
     Notification.requestPermission();
   }
 
-  setTimeout(() => {
-    new Notification('Heute schon geblubbt?', {
-      body: 'Maximilian hat schon zweimal geblubbt. Und du?',
+  setInterval(() => {
+    new Notification('Blubb mal wieder', {
+      body: `Du hast bisher ${localStorage.getItem(new Date().toISOString().split('T')[0])} ml geblubbt.`,
       icon: '/res/img/favicon/blubb.today-32x32.png',
     });
-  }, 1000);
+  }, 2 * 60 * 60 * 1000);
 }
 
 if ('serviceWorker' in navigator) {
