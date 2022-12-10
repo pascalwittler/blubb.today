@@ -1,4 +1,4 @@
-const cacheName = 'blubb.today-v0.2.0';
+const cacheName = 'blubb.today-v0.3.0';
 
 const filesToCache = [
   'index.html',
@@ -6,6 +6,11 @@ const filesToCache = [
   'res/css/main.css',
   'res/js/main.js',
   'res/js/service-worker.js',
+  'res/js/includes/add-menu.js',
+  'res/js/includes/local-storage.js',
+  'res/js/includes/progress-bar.js',
+  'res/js/includes/preogressive-web-app.js',
+  'res/js/includes/web-notification.js',
   'res/img/favicon/blubb.today-512x512.png',
   'res/fonts/EncodeSans.woff2',
 ];
