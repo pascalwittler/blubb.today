@@ -37,20 +37,20 @@ addMenuList.innerHTML += `
 
 const addMenuButtons = addMenuList.querySelectorAll('button');
 
-const blubbStatusProgress = document.querySelector('progress');
+const blubbStatusProgressBar = document.querySelector('.progress-bar');
 const blubbStatusLabel = document.querySelector('.current');
 
 addMenuButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const currentBlubbStatus = parseInt(localStorage.getItem(new Date().toISOString().split('T')[0]));
     localStorage.setItem(new Date().toISOString().split('T')[0], (currentBlubbStatus + parseInt(button.value)).toString())
-    blubbStatusProgress.value = parseInt(localStorage.getItem(new Date().toISOString().split('T')[0]));
+    blubbStatusProgressBar.style.width = (parseInt(localStorage.getItem(new Date().toISOString().split('T')[0])) / 4000 * 100) + '%';
     blubbStatusLabel.innerHTML = localStorage.getItem(new Date().toISOString().split('T')[0]);
     addMenu.close();
   });
 });
 
-blubbStatusProgress.value = parseInt(localStorage.getItem(new Date().toISOString().split('T')[0]));
+blubbStatusProgressBar.style.width = (parseInt(localStorage.getItem(new Date().toISOString().split('T')[0])) / 4000 * 100) + '%';
 blubbStatusLabel.innerHTML = localStorage.getItem(new Date().toISOString().split('T')[0]);
 
 addMenuOpener.addEventListener('click', () => {
