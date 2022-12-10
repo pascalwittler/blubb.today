@@ -4,9 +4,7 @@
   "theme_color": "#2292a8",
   "background_color": "#fffcff",
   "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "https://blubb.today",
+  "start_url": "/",
   "lang": "de",
   "icons": [
     {
