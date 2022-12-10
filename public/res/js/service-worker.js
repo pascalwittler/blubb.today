@@ -1,4 +1,4 @@
-const cacheName = 'blubb.today-v0.1.0';
+const cacheName = 'blubb.today-v0.2.0';
 
 const filesToCache = [
   'index.html',
