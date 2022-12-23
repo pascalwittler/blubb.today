@@ -8,24 +8,40 @@
   "lang": "de",
   "icons": [
     {
-      "src": "res/img/favicon/blubb.today-512x512.png",
+      "src": "/res/img/pwa/blubb.today.svg",
+      "sizes": "any",
+      "type": "img/svg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/res/img/pwa/blubb.today.svg",
       "sizes": "512x512",
-      "type": "img/png"
+      "type": "img/svg",
+      "purpose": "any maskable"
     },
     {
-      "src": "res/img/favicon/blubb.today-256x256.png",
-      "sizes": "256x256",
-      "type": "img/png"
+      "src": "/res/img/pwa/blubb.today.svg",
+      "sizes": "144x144",
+      "type": "img/svg",
+      "purpose": "any maskable"
     },
     {
-      "src": "res/img/favicon/blubb.today-32x32.png",
-      "sizes": "32x32",
-      "type": "img/png"
+      "src": "/res/img/pwa/blubb.today.png",
+      "sizes": "512x512",
+      "type": "img/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "res/img/favicon/blubb.today-16x16.png",
-      "sizes": "16x16",
-      "type": "img/png"
+      "src": "/res/img/pwa/blubb.today.png",
+      "sizes": "192x192",
+      "type": "img/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/res/img/pwa/blubb.today.png",
+      "sizes": "144x144",
+      "type": "img/png",
+      "purpose": "any maskable"
     }
   ]
 }
