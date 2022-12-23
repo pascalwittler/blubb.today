@@ -3,15 +3,16 @@ const cacheName = 'blubb.today-v0.3.0';
 const filesToCache = [
   'index.html',
   'manifest.json',
+  'service-worker.js',
   'res/css/main.css',
   'res/js/main.js',
-  'res/js/service-worker.js',
   'res/js/includes/add-menu.js',
   'res/js/includes/local-storage.js',
   'res/js/includes/progress-bar.js',
-  'res/js/includes/preogressive-web-app.js',
+  'res/js/includes/progressive-web-app.js',
   'res/js/includes/web-notification.js',
-  'res/img/favicon/blubb.today-512x512.png',
+  'res/img/pwa/blubb.today.svg',
+  'res/img/pwa/blubb.today.png',
   'res/fonts/EncodeSans.woff2',
 ];
 
